@@ -1,0 +1,21 @@
+.darkMode {
+    color: white;
+    background-image: linear-gradient(black, rgb(65, 65, 65));
+}
+
+@media screen and (max-width : 768px) {
+    .navBarBtn {
+        display: none;
+        /* position: absolute; */
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: white;
+    }
+
+    .socialLinks {
+        display: none;
+    }
+}
