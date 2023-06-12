@@ -119,7 +119,7 @@ const About = () => {
                 <li>Hindi</li>
                 <li>English</li>
                 <li>Spanish</li>
-                <li>German</li>
+                <li>Telugu</li>
                 <li>Japanese</li>
               </ul>
             </div>
