@@ -1,6 +1,5 @@
 import React from "react";
-import myImage from "../Images/myPic.jpg"
-// import { Link } from "react-router-dom";
+import myImage from "../Images/myPic.jpg";
 
 const About = () => {
   return (
@@ -11,11 +10,12 @@ const About = () => {
       >
         <img
           className="lg:w-2/6 md:w-3/6 w-5/6 mb-2 object-cover object-center"
+          id="myImg"
           alt="hero"
           src={myImage}
           style={{
             borderRadius: "50%",
-            width: "12%",
+            width: "17%",
             marginTop: "2vh",
             border: "1px solid greenyellow",
           }}
@@ -103,6 +103,24 @@ const About = () => {
                   Java App <br /> Development
                 </li>
                 <li>Flutter</li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex items-center lg:w-3/5 mx-auto border-b pb-3 mb-3 border-gray-200 sm:flex-row flex-col">
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 className="text-lg title-font font-medium mb-2">Languages</h2>
+              <ul
+                style={{
+                  listStyle: "disc inside",
+                  textAlign: "left",
+                  display: "inline-block",
+                }}
+              >
+                <li>Hindi</li>
+                <li>English</li>
+                <li>Spanish</li>
+                <li>German</li>
+                <li>Japanese</li>
               </ul>
             </div>
           </div>

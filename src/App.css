@@ -1,21 +1,105 @@
-.darkMode {
-    color: white;
-    background-image: linear-gradient(black, rgb(65, 65, 65));
+.text-center a:hover {
+  color: rgb(0, 140, 0) !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-@media screen and (max-width : 768px) {
-    .navBarBtn {
-        display: none;
-        /* position: absolute; */
-        top: 60px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        height: calc(100vh - 77px);
-        background-color: white;
-    }
+.container li {
+  list-style: none;
+}
 
-    .socialLinks {
-        display: none;
-    }
+.container li::before {
+  content: "\00BB";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+#gallery {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+#gallery img,
+#gallery video {
+  width: 100%;
+  height: auto;
+  margin: 4% auto;
+  box-shadow: -3px 5px 15px #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.modal-img,
+.model-vid {
+  width: 100%;
+  height: auto;
+}
+
+.modal-body {
+  padding: 0px;
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1377px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navBarBtn {
+    display: none;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+  }
+
+  .socialLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  #myImg {
+    width: 23% !important;
+  }
+
+  #navbarNavAltMarkup {
+    margin: 0px !important;
+  }
+}
+@media (max-width: 600px) {
+  #gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
 }

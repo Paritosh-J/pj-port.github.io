@@ -4,10 +4,13 @@ import { useState } from "react";
 import "../../App.css";
 
 const Navbar = () => {
-  const [isNavExpanded, setIsVacExpanded] = useState(false);
+  const [isNavExpanded, setIsVacExpanded] = useState(true);
   return (
     <nav className="navbar navbar-expand-lg bg-light">
-      <div className="container text-black-600 px-20 flex flex-wrap" style={{ justifyContent: "center" }}>
+      <div
+        className="container text-black-600 flex flex-wrap"
+        style={{ justifyContent: "center" }}
+      >
         <button
           className="navbar-toggler"
           type="button"
@@ -22,14 +25,15 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div style={{display: "flex", marginRight: "2em"}}>
+        <div style={{ display: "flex", margin: "auto" }}>
+          <div style={{}}></div>
           <a className="flex title-font font-medium items-center md:mb-0">
             <svg
               className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              style={{ color: "rgb(40, 197, 34)", marginLeft: "1em" }}
+              style={{ color: "rgb(40, 197, 34)", marginLeft: "-2em" }}
             >
               <path
                 strokeLinecap="round"
@@ -39,12 +43,24 @@ const Navbar = () => {
               />
             </svg>
           </a>
-          <a className="ml-3 text-xl hover:cursor-pointer">PJ Port</a>
+          {/* <a className="ml-3 text-xl hover:cursor-pointer">PJ Port</a> */}
+          <NavLink
+            className="nav-link ml-2 mr-8 text-xl"
+            aria-current="page"
+            to="/"
+          >
+            PJ Port
+          </NavLink>
         </div>
         <div
           className="navbar-collapse"
           id="navbarNavAltMarkup"
-          style={{ fontWeight: "500", justifyContent: "center", textAlign: "center" }}
+          style={{
+            fontWeight: "500",
+            justifyContent: "center",
+            textAlign: "center",
+            marginLeft: "3em",
+          }}
         >
           <div
             className={isNavExpanded ? "navbar-nav navBarBtn" : "navbar-nav"}
@@ -54,6 +70,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink className="nav-link" to="projects">
               Projects
+            </NavLink>
+            <NavLink className="nav-link" to="artwork">
+              Art Work
             </NavLink>
             <NavLink className="nav-link" to="resume">
               Resume
@@ -145,7 +164,6 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-
     </nav>
   );
 };

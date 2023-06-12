@@ -20,7 +20,7 @@ const Resume = () => {
         <div className="text-center lg:w-2/3 w-full">
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1GcK2zeAKHw6Pk_iMfRho9dkBsJsuTkms/view?usp=sharing"
+            href="https://drive.google.com/file/d/1C7kSXnk2V8q_VTlbLy_U9CjQ9BqMsufw/view?usp=sharing"
             className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
             Download
